@@ -1,0 +1,41 @@
+<div class="card m-3">
+
+    <h5 class="card-header">All Students</h5>
+
+    <div class="form-row">
+
+        <div class="form-group col-2">FirstName</div>
+
+        <div class="form-group col-2">LastName</div>
+
+        <div class="form-group col-2">Email</div>
+
+        <div class="form-group col-2">MobileNumber</div>
+
+        <div class="form-group col-2">Action1</div>
+
+        <div class="form-group col-2">Action2</div>
+
+    </div>
+
+    <div class="form-row" *ngFor="let stu of studentArray">
+
+        <div class="form-group col-2">{{stu.firstName}}</div>
+
+        <div class="form-group col-2">{{stu.lastName}}</div>
+
+        <div class="form-group col-2">{{stu.email}}</div>
+
+        <div class="form-group col-2">{{stu.mobileNumber}}</div>
+
+        <div class="form-group col-2">
+            <button class="btn btn-danger " 
+            (click)="deleteStudent(stu._id)">Delete</button>
+        </div>
+
+        <div class="form-group col-2">
+            <button class="btn btn-danger " (click)="editStudent(stu._id)">Edit</button>
+        </div>
+
+    </div>
+    </div>

@@ -1,0 +1,126 @@
+<div class="card m-3">
+
+    <h5 class="card-header">Student Registration Form</h5>
+
+    <div class="card-body">
+
+      <form (ngSubmit)="submitRegistration()">
+
+
+
+
+        <div *ngIf="success" style="color: rgb(249, 37, 37);"><b>Registration successfull!!</b></div>
+
+        <div class="form-row">
+
+          <div class="form-group col-5">
+
+            <label>First Name</label>
+
+            <input
+
+              type="text"
+
+              class="form-control"
+
+              [(ngModel)]="firstName" name="firstName"
+
+            />
+
+            {{firstName}}
+
+          </div>
+
+          </div>
+
+          <div class="form-row">
+
+          <div class="form-group col-5">
+
+            <label>Last Name</label>
+
+            <input
+
+              type="text"
+
+              class="form-control"
+
+              [(ngModel)]="lastName" name="lastName"
+
+            />
+
+          </div>
+
+        </div>
+
+          <div class="form-row">
+
+          <div class="form-group col-5">
+
+            <label>Email</label>
+
+            <input
+
+              type="text"
+
+              class="form-control"
+
+              [(ngModel)]="email" name="email"
+
+            />
+
+          </div>
+
+        </div>
+
+          <div class="form-row">
+
+          <div class="form-group col-5">
+
+            <label>Mobile No</label>
+
+            <input
+
+              type="text"
+
+              class="form-control"
+
+              [(ngModel)]="mobileNumber" name="mobileNumber"
+
+            />
+
+          </div>
+
+        </div>
+
+          <div class="form-row">
+
+          <div class="form-group col-5">
+
+            <label>Password</label>
+
+            <input
+
+              type="text"
+
+              class="form-control"
+
+              [(ngModel)]="password" name="password"
+
+            />
+
+          </div>
+
+        </div>
+
+        <div class="text-center">
+
+          <button class="btn btn-primary mr-1" >Register Here</button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
